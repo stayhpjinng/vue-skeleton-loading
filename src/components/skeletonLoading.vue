@@ -1,20 +1,30 @@
 <template>
     <div class="vue-skeleton-loading">
-        <h1>hello worls</h1>
-        <div class="animationed-background">
-            <div>test</div>
+        <div class="skeleton-bac-animation"></div>
+        <div class="skeleton-container">
+
         </div>
     </div>
 </template>
 
 <script>
+    import circleSkeleton from './basic/circleSkeleton';
+    import squareSkeleton from './basic/squareSkeleton';
     export default {
-        data: function () {
-            return {}
+        data() {
+            return {};
+        },
+        components: {
+            circleSkeleton,
+            squareSkeleton
         }
     }
 </script>
 
 <style lang="less">
-
+    .skeleton-bac-animation {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
 </style>

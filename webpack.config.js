@@ -50,7 +50,7 @@ var config = {
     resolve: {
         alias: {
             'vue-skeleton-loading': path.resolve(__dirname, './src'),
-            'vue': 'vue/dist/vue.js'
+            'vue': 'vue/dist/vue.common.js'
         },
         extensions: ['.js', '.vue']
     },

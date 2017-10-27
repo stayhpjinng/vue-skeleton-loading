@@ -2,7 +2,7 @@
   "name": "skeleton-loading",
   "version": "1.0.0",
   "description": "a skeleton loading ",
-  "main": "index.js",
+  "main": "dist/vue-skeleton-loading.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --host=127.0.0.1 --port=8080",
     "doc": "cross-env NODE_ENV=production BUILD=doc webpack ",

@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import VueSkeletonLoading from '../src';
+import VueSkeletonLoading from 'vue-skeleton-loading';
 import App from './app.vue';
 import Index from './components'
 
