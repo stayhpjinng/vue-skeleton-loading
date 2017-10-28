@@ -16,9 +16,11 @@
         props: {
             gutter: {
                 type: Object,
-                default: {
-                    top: '0',
-                    bottom: '0'
+                default() {
+                    return {
+                        top: '0',
+                        bottom: '0'
+                    }
                 }
             },
             align: {

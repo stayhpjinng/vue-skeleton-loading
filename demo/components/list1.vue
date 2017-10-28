@@ -3,6 +3,7 @@
         <skeleton-loading>
             <row
                     v-for="i in 6"
+                    :key="i"
                     :gutter="{top: '10px', bottom: '10px'}"
             >
                 <column :span="3" :gutter="10">

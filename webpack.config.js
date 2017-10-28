@@ -1,6 +1,8 @@
 const path = require('path');
 var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+
 
 
 var config = {
@@ -68,7 +70,7 @@ if (process.env.NODE_ENV === 'production') {
                 NODE_ENV: '"production"'
             }
         }),
-        new webpack.optimize.UglifyJsPlugin({
+        new UglifyJSPlugin({
             sourceMap: true
         })
     ]);

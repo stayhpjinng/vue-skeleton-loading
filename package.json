@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "a skeleton loading ",
   "main": "dist/vue-skeleton-loading.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiingwang/vue-skeleton-loading.git"
+  },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --host=127.0.0.1 --port=8080",
     "doc": "cross-env NODE_ENV=production BUILD=doc webpack ",
