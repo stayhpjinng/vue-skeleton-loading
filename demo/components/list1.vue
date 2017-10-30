@@ -10,12 +10,15 @@
                     <circle-skeleton></circle-skeleton>
                 </column>
                 <column :span="20" :gutter="10">
-                    <row :gutter="{top: '-2px', bottom: '15px'}">
-                        <square-skeleton width="250px" height="15px"></square-skeleton>
-                    </row>
-                    <row :gutter="{bottom: '15px'}">
-                        <square-skeleton width="100px" height="15px"></square-skeleton>
-                    </row>
+                        <square-skeleton 
+                            :count="2"
+                            :boxProperties="{
+                                bottom: '15px',
+                                width: '250px',
+                                height: '15px'
+                            }"
+                        >
+                        </square-skeleton>
                 </column>
             </row>
         </skeleton-loading>

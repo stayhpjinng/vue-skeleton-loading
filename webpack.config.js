@@ -9,7 +9,7 @@ var config = {
     entry: './demo/main.js',
     output: {
         path: path.resolve(__dirname, './docs'),
-        publicPath: '/dist/',
+        publicPath: '/docs/',
         filename: 'build.js'
     },
     module: {
@@ -58,7 +58,8 @@ var config = {
     },
     devServer: {
     },
-    plugins: [],
+    plugins: [
+    ],
     devtool: '#eval-source-map'
 }
 
@@ -74,6 +75,14 @@ if (process.env.NODE_ENV === 'production') {
             sourceMap: true
         })
     ]);
+    if(process.env.BUILD === 'doc') {
+        config.plugins = (config.plugins || []).concat([
+            new HtmlWebpackPlugin({
+                title: 'vue skeleton loading demo',
+                template: './index.html'
+            })
+        ]);
+    }
 
     if (process.env.BUILD === 'publish') {
         config.entry = './src/index.js';

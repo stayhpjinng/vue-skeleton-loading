@@ -46,7 +46,9 @@
                     }" 
                 >
                 </square-skeleton>
-                <square-skeleton 
+            </row>
+            <row>
+                 <square-skeleton 
                     :boxProperties="{
                         bottom: '10px',
                         height: '200px'
