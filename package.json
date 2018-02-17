@@ -16,11 +16,11 @@
   "author": "Jing<jonneswong@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue": "^2.5.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "vue-router": "^3.0.1",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "cross-env": "^5.1.0",

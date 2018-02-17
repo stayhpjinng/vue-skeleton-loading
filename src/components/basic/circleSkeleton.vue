@@ -4,7 +4,7 @@
 		ref="circle"
 		:style="{
 			'backgroundColor': backColor,
-			'width': radius,
+			'width': diameter,
 			'height': height
 		}"
 	>
@@ -23,7 +23,7 @@
                 type: String,
                 default: '#e7e7e7'
             },
-            radius: {
+            diameter: {
                 type: String,
                 default: '100%'
             }
