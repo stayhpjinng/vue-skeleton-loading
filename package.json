@@ -1,6 +1,6 @@
 {
   "name": "vue-skeleton-loading",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a skeleton loading ",
   "keywords": ["skeleton", "skeleton-loading", "vue-skeleton-loading", "vue-loading"],
   "main": "dist/vue-skeleton-loading.js",
