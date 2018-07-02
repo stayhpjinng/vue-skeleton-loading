@@ -1,5 +1,5 @@
 node_modules/
 .idea/
 npm-debug.log
-.babelrc
 docs/
+yarn.lock
