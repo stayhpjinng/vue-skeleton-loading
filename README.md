@@ -32,7 +32,7 @@ npm run dev
 
 项目入口文件全局注册
 
-```vue
+```javascript
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 // 引用组件
@@ -52,18 +52,17 @@ const routes = [
 		name: 'index',
 		path: '/',
 		component: Index
-	},
-	{
-        name: 'page',
-        path: '/page',
-        component: Page
-	},
-    {
-        name: 'list1',
-        path: '/list1',
-        component: List1
-    }
+	},{
+		name: 'page',
+		path: '/page',
+		component: Page
+	},{
+		name: 'list1',
+		path: '/list1',
+		component: List1
+   }
 ];
+
 const router = new VueRouter({
 	routes
 });
@@ -91,8 +90,7 @@ new Vue({
             <skeleton-row
                     v-for="i in 6"
                     :key="i"
-                    :gutter="{top: '10px', bottom: '10px'}"
-            >
+                    :gutter="{top: '10px', bottom: '10px'}">
                 <skeleton-column :span="3" :gutter="10">
                     <skeleton-circle></skeleton-circle>
                 </skeleton-column>
@@ -103,8 +101,7 @@ new Vue({
                                 bottom: '15px',
                                 width: '250px',
                                 height: '15px'
-                            }"
-                        >
+                            }">
                         </skeleton-square>
                 </column>
             </skeleton-row>
@@ -126,22 +123,20 @@ new Vue({
 
 例子二： 
 
-```
+```vue
 <template>
     <div class="page">
         <skeleton-loading>
             <skeleton-row 
                 :gutter="{
                     bottom: '15px'
-                }"
-            >
+                }">
                 <skeleton-square 
                     :count="2"
                     :boxProperties="{
                         top: '10px',
                         height: '26px'
-                    }"
-                >
+                    }">
                 </skeleton-square>
             </skeleton-row>
             <skeleton-row>
@@ -154,16 +149,14 @@ new Vue({
                             top: '10px',
                             width: '70px',
                             height: '15px'
-                        }"
-                    >
+                        }">
                     </skeleton-square>
                     <skeleton-square 
                         :boxProperties="{
                             width: '100px',
                             height: '15px',
                             top: '10px'
-                        }"
-                    >
+                        }">
                     </skeleton-square>
                 </skeleton-column>
             </skeleton-row>
@@ -172,8 +165,7 @@ new Vue({
                     :count="4"
                     :boxProperties="{
                         bottom: '10px'
-                    }" 
-                >
+                    }" >
                 </skeleton-square>
             </skeleton-row>
             <skeleton-row>
@@ -181,8 +173,7 @@ new Vue({
                     :boxProperties="{
                         bottom: '10px',
                         height: '200px'
-                    }"    
-                >
+                    }">
                 </skeleton-square>
             </skeleton-row>
         </skeleton-loading>
