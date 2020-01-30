@@ -88,16 +88,16 @@ new Vue({
 <template>
     <div class="list1">
         <skeleton-loading>
-            <row
+            <skeleton-row
                     v-for="i in 6"
                     :key="i"
                     :gutter="{top: '10px', bottom: '10px'}"
             >
-                <column :span="3" :gutter="10">
-                    <circle-skeleton></circle-skeleton>
-                </column>
+                <skeleton-column :span="3" :gutter="10">
+                    <skeleton-circle></skeleton-circle>
+                </skeleton-column>
                 <column :span="20" :gutter="10">
-                        <square-skeleton 
+                        <skeleton-square
                             :count="2"
                             :boxProperties="{
                                 bottom: '15px',
@@ -105,9 +105,9 @@ new Vue({
                                 height: '15px'
                             }"
                         >
-                        </square-skeleton>
+                        </skeleton-square>
                 </column>
-            </row>
+            </skeleton-row>
         </skeleton-loading>
     </div>
 </template>
@@ -130,61 +130,61 @@ new Vue({
 <template>
     <div class="page">
         <skeleton-loading>
-            <row 
+            <skeleton-row 
                 :gutter="{
                     bottom: '15px'
                 }"
             >
-                <square-skeleton 
+                <skeleton-square 
                     :count="2"
                     :boxProperties="{
                         top: '10px',
                         height: '26px'
                     }"
                 >
-                </square-skeleton>
-            </row>
-            <row>
-                <column :span="4">
-                    <circle-skeleton></circle-skeleton>
-                </column>
-                <column :span="20" :gutter="20">
-                    <square-skeleton 
+                </skeleton-square>
+            </skeleton-row>
+            <skeleton-row>
+                <skeleton-column :span="4">
+                    <skeleton-circle></skeleton-circle>
+                </skeleton-column>
+                <skeleton-column :span="20" :gutter="20">
+                    <skeleton-square 
                         :boxProperties="{
                             top: '10px',
                             width: '70px',
                             height: '15px'
                         }"
                     >
-                    </square-skeleton>
-                    <square-skeleton 
+                    </skeleton-square>
+                    <skeleton-square 
                         :boxProperties="{
                             width: '100px',
                             height: '15px',
                             top: '10px'
                         }"
                     >
-                    </square-skeleton>
-                </column>
-            </row>
-            <row :gutter="{top: '20px'}">
-                <square-skeleton 
+                    </skeleton-square>
+                </skeleton-column>
+            </skeleton-row>
+            <skeleton-row :gutter="{top: '20px'}">
+                <skeleton-square 
                     :count="4"
                     :boxProperties="{
                         bottom: '10px'
                     }" 
                 >
-                </square-skeleton>
-            </row>
-            <row>
-                 <square-skeleton 
+                </skeleton-square>
+            </skeleton-row>
+            <skeleton-row>
+                 <skeleton-square 
                     :boxProperties="{
                         bottom: '10px',
                         height: '200px'
                     }"    
                 >
-                </square-skeleton>
-            </row>
+                </skeleton-square>
+            </skeleton-row>
         </skeleton-loading>
     </div>
 </template>
@@ -236,7 +236,7 @@ Function
 
 
 
-### CircleSkeleton
+### SkeletonCircle
 
 Props
 
@@ -267,7 +267,7 @@ Function
 
 
 
-### SquareSkeleton
+### SkeletonSquare
 
 
 
@@ -310,7 +310,7 @@ Function
 
 
 
-### Column
+### SkeletonColumn
 
 Props
 
@@ -342,7 +342,7 @@ Function
 
 
 
-### Row
+### SkeletonRow
 
 Props
 
@@ -387,61 +387,61 @@ e.g
 
 ```
 <skeleton-loading>
-            <row 
+            <skeleton-row 
                 :gutter="{
                     bottom: '15px'
                 }"
             >
-                <square-skeleton 
+                <skeleton-square 
                     :count="2"
                     :boxProperties="{
                         top: '10px',
                         height: '26px'
                     }"
                 >
-                </square-skeleton>
+                </skeleton-square>
             </row>
-            <row>
-                <column :span="4">
-                    <circle-skeleton></circle-skeleton>
-                </column>
-                <column :span="20" :gutter="20">
-                    <square-skeleton 
+            <skeleton-row>
+                <skeleton-column :span="4">
+                    <skeleton-circle></skeleton-circle>
+                </skeleton-column>
+                <skeleton-column :span="20" :gutter="20">
+                    <skeleton-square 
                         :boxProperties="{
                             top: '10px',
                             width: '70px',
                             height: '15px'
                         }"
                     >
-                    </square-skeleton>
-                    <square-skeleton 
+                    </skeleton-square>
+                    <skeleton-square 
                         :boxProperties="{
                             width: '100px',
                             height: '15px',
                             top: '10px'
                         }"
                     >
-                    </square-skeleton>
-                </column>
-            </row>
-            <row :gutter="{top: '20px'}">
-                <square-skeleton 
+                    </skeleton-square>
+                </skeleton-column>
+            </skeleton-row>
+            <skeleton-row :gutter="{top: '20px'}">
+                <skeleton-square 
                     :count="4"
                     :boxProperties="{
                         bottom: '10px'
                     }" 
                 >
-                </square-skeleton>
-            </row>
-            <row>
-                 <square-skeleton 
+                </skeleton-square>
+            </skeleton-row>
+            <skeleton-row>
+                 <skeleton-square 
                     :boxProperties="{
                         bottom: '10px',
                         height: '200px'
                     }"    
                 >
-                </square-skeleton>
-            </row>
+                </skeleton-square>
+            </skeleton-row>
         </skeleton-loading>
 ```
 
