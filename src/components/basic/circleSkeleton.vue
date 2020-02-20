@@ -37,7 +37,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.circle {
         border-radius: 50%;
 	}

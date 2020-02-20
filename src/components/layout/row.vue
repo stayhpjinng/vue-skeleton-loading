@@ -41,8 +41,7 @@
     }
     
 </script>
-
-<style lang="less">
+<style lang="less" scoped>
     .row {
         display: flex;
         flex-direction: row;

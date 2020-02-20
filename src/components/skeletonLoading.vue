@@ -19,7 +19,7 @@
     }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
     .vue-skeleton-loading {
         position: relative;
         width: 100%;

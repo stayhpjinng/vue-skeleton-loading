@@ -42,7 +42,7 @@
     }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
     .square-list {
         width: 100%;
     }
