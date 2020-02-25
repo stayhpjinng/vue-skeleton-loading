@@ -7,11 +7,11 @@ import Row from './components/layout/row.vue';
 function install(Vue) {
     if(install.installed) return;
     install.installed = true;
-    Vue.component('SkeletonLoading', SkeletonLoading);
-    Vue.component('SquareSkeleton', SquareSkeleton);
-    Vue.component('CircleSkeleton', CircleSkeleton);
-    Vue.component('Column', Column);
-    Vue.component('Row', Row);
+    Vue.component('skeleton-loading', SkeletonLoading);
+    Vue.component('skeleton-square', SquareSkeleton);
+    Vue.component('skeleton-circle', CircleSkeleton);
+    Vue.component('skeleton-column', Column);
+    Vue.component('skeleton-row', Row);
 }
 
 const VueSkeletonLoading = {
